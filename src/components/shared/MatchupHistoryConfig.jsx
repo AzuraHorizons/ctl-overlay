@@ -32,7 +32,7 @@ const MatchupHistoryConfig = ({ value, onChange, teamPlayerNames }) => {
           Copy to Clipboard
         </button>
         {exportStatus && <span role="alert">{exportStatus}</span>}
-        <span style={{textAlign: "right", right: "13px", position: "absolute"}}>C</span>
+        <span style={{textAlign: "right", right: "13px", position: "absolute", title:"Toggle Purchase Counterpick"}}>C</span>
       </h3>
       <p id="counterpick-help" className="counterpick-help">
       </p>
