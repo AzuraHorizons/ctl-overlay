@@ -53,6 +53,7 @@ const MatchupHistoryConfig = ({ value, onChange, teamPlayerNames }) => {
         <button type="button" onClick={exportHistory}>
           Copy to Clipboard
         </button>
+        <span style={{textAlign: "right", right: "8px", position: "absolute"}}>C</span>
         {exportStatus && <span role="alert">{exportStatus}</span>}
       </h3>
       <div className="matchup-teams-config">
@@ -62,7 +63,7 @@ const MatchupHistoryConfig = ({ value, onChange, teamPlayerNames }) => {
             <div className="matchup-team-config" key={teamIndex}>
               <div className="matchup-team-rows-config">
                 {value.matchups.map((matchup, gameIndex) => (
-                  <div className="matchup-team-row" key={gameIndex}>
+                  <div className={`matchup-team-row row-${side}`} key={gameIndex}>
                     <label>
                       <select
                         name={`match-${gameIndex + 1}-${side}-player`}
@@ -92,6 +93,15 @@ const MatchupHistoryConfig = ({ value, onChange, teamPlayerNames }) => {
                         placeholder="0"
                       />
                     </label>
+                    {/* Only render on right player */}
+                    {side === "right" && (<label> <input
+                    type="checkbox"
+                    value={matchup["Counterpick"]}
+                      onChange={(event) =>
+                          updateMatchup(gameIndex, `Counterpick`, event.target.value)
+                        }
+                    /></label>)}
+                    
                   </div>
                 ))}
               </div>

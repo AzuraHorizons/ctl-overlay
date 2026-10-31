@@ -20,6 +20,7 @@ const createEmptyMatchupHistory = () => ({
     leftScore: '',
     rightScore: '',
     rightPlayer: '',
+    Counterpick: '',
   })),
 });
 
