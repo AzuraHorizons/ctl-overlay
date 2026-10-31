@@ -1,5 +1,5 @@
 import OBSWebSocket from 'obs-websocket-js';
-import { totalMatchupScores } from './matchupScores.mjs';
+import { totalMatchupScores } from './matchupScores.js';
 
 const obs = new OBSWebSocket();
 

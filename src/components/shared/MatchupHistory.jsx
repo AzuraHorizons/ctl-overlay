@@ -1,4 +1,4 @@
-import { formatScore, getMatchupScores } from '../../util/matchupScores.mjs';
+import { formatScore, getMatchupScores } from '../../util/matchupScores.js';
 import './MatchupHistory.css';
 
 const FRAME_URL = `${import.meta.env.BASE_URL}tws/twsavatarframe_min.png`;

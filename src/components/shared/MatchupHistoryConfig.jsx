@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { getMatchupScores } from '../../util/matchupScores.mjs';
+import { getMatchupScores } from '../../util/matchupScores.js';
 import { formatMatchupHistory } from '../../util/formatMatchupHistory.mjs';
 
 const MatchupHistoryConfig = ({ value, onChange, teamPlayerNames }) => {

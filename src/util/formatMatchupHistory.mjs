@@ -1,4 +1,4 @@
-import { formatScore, getMatchupScores, totalMatchupScores } from './matchupScores.mjs';
+import { formatScore, getMatchupScores, totalMatchupScores } from './matchupScores.js';
 
 export const formatMatchupHistory = (matchups, bans, currentMatch) => {
   const rows = matchups.filter((m) => m.leftPlayer || m.rightPlayer);
