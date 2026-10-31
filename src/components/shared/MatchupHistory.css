@@ -78,6 +78,9 @@
   gap: calc(var(--history-avatar-size) * 0.1);
   font-size: calc(var(--history-avatar-size) * 0.5);
   line-height: 0.8;
+  padding: 3px;
+  font-weight:800;
+
 }
 
 .tws-history-score-num {
@@ -104,4 +107,10 @@
   font-size: 60%;
   line-height: 1;
   white-space: nowrap;
+}
+
+.counterpicked{
+  background-color: white;
+  color: #5343bc;
+  padding: 3px;
 }
