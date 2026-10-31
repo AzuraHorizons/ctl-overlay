@@ -96,9 +96,9 @@ const MatchupHistoryConfig = ({ value, onChange, teamPlayerNames }) => {
                     {/* Only render on right player */}
                     {side === "right" && (<label> <input
                     type="checkbox"
-                    value={matchup["Counterpick"]}
+                    checked={Boolean(matchup["Counterpick"])}
                       onChange={(event) =>
-                          updateMatchup(gameIndex, `Counterpick`, event.target.value)
+                          updateMatchup(gameIndex, `Counterpick`, event.target.checked)
                         }
                     /></label>)}
                     

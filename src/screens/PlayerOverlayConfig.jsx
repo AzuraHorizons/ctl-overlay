@@ -20,7 +20,7 @@ const createEmptyMatchupHistory = () => ({
     leftScore: '',
     rightScore: '',
     rightPlayer: '',
-    Counterpick: '',
+    Counterpick: false,
   })),
 });
 
@@ -252,6 +252,7 @@ const PlayerOverlayConfig = () => {
               leftScore: gameScores[0],
               rightScore: gameScores[1],
               rightPlayer: selectedNames[1],
+              Counterpick: false,
             }
           : matchup
       ),
